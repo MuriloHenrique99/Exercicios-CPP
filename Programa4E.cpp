@@ -3,7 +3,9 @@
 
 int main(void) {
 	double a,b,c,del,x1,x2;
-	std::cin >> a >> b >> c;
+	std::cout << "Digite um valor: "; std::cin >> a;
+	std::cout << "Digite um valor: "; std::cin >> b;
+	std::cout << "Digite um valor: "; std::cin >> c;
 	if (a != 0 && b != 0 && c != 0) {
 		del = pow(b, 2) - 4 * a * c;
 		if (del < 0) {
@@ -19,10 +21,10 @@ int main(void) {
 	} else {
 		std::cout << "Nao coloque zeros" << std::endl;
 	}
-
+	std::cin.ignore(80, '\n');
 	std::cout << "Tecle <Enter> para encerrar...";
 	std::cin.get();
 	
 	return 0;
 }
-//possivelmente errado 
+
